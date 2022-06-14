@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.map-red {
+  background-color: orangered;
+  border: 3px solid red;
+  color: red;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+}
+
+.map-blue {
+  background-color: orangered;
+  border: 3px solid blue;
+  color: blue;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+}
+
+.map-green {
+  background-color: orangered;
+  border: 3px solid green;
+  color: green;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+}
+
+.somos-redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.fondo_nav {
+  background-color: orangered;
+}
+
+body {
+  background-color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  #logotipo {
+    width: 100px;
+    height: 50px;
+  }
+  .portada {
+    background-image: url(../multimedia/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+  }
+  .portada__contenedor--titulo {
+    font-size: 400%;
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 5px red;
+    margin-bottom: 80px;
+  }
+  .portada__contenedor--subtitulo {
+    font-size: 150%;
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 5px red;
+  }
+  .subtitulo {
+    margin-top: 30px;
+  }
+  .subtitulo .subtitulo h2 {
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid white;
+  }
+  .parte1__subcontenedor {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .subcontenedor--energeticas {
+    margin-top: 15px;
+  }
+  .subcontenedor--proteicas {
+    margin-bottom: 40px;
+  }
+  #energeticas {
+    text-decoration: none;
+    color: white;
+  }
+  #energeticas:hover {
+    color: rgb(238, 255, 0);
+  }
+  #proteicas {
+    text-decoration: none;
+    color: white;
+  }
+  #proteicas:hover {
+    color: rgb(238, 255, 0);
+  }
+  .imgenergeticas {
+    width: 300px;
+    height: 300px;
+  }
+  .imgproteicas {
+    width: 300px;
+    height: 300px;
+  }
+  .art1 h4 {
+    color: white;
+  }
+  .art1 p {
+    color: white;
+    text-align: center;
+  }
+  .contenedor3 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contenedor3 img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
+  footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: orangered;
+  }
+  .div1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .div2 {
+    text-align: center;
+  }
+  .div3 {
+    text-align: center;
+  }
+  .parte1__subcontenedor {
+    transition: transform 2s;
+  }
+  .parte1__subcontenedor:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  #logotipo {
+    width: 120px;
+    height: 60px;
+  }
+  .portada {
+    background-image: url(../multimedia/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+  }
+  .portada__contenedor--titulo {
+    font-size: 600%;
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 5px red;
+    margin-bottom: 80px;
+  }
+  .portada__contenedor--subtitulo {
+    font-size: 220%;
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 5px red;
+  }
+  .subtitulo {
+    margin-top: 30px;
+  }
+  .subtitulo h2 {
+    color: orangered;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid white;
+  }
+  .parte1__subcontenedor {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .subcontenedor--energeticas {
+    margin-top: 15px;
+  }
+  .subcontenedor--proteicas {
+    margin-bottom: 40px;
+  }
+  #energeticas {
+    text-decoration: none;
+    color: white;
+  }
+  #proteicas {
+    text-decoration: none;
+    color: white;
+  }
+  #energeticas:hover {
+    color: rgb(238, 255, 0);
+  }
+  #proteicas:hover {
+    color: rgb(238, 255, 0);
+  }
+  .imgenergeticas {
+    width: 400px;
+    height: 400px;
+  }
+  .imgproteicas {
+    width: 400px;
+    height: 400px;
+  }
+  .art1 h4 {
+    color: white;
+  }
+  .art1 p {
+    color: white;
+    text-align: center;
+  }
+  .contenedor3 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contenedor3 img {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+  footer {
+    width: 100%;
+    height: 200px;
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  footer .div1 h3 {
+    font-size: 25px;
+  }
+  footer .div2 h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+  footer .div3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  footer .div3 p {
+    font-size: 10px;
+  }
+  .parte1__subcontenedor {
+    transition: transform 2s;
+  }
+  .parte1__subcontenedor:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 768px) {
+  #logotipo {
+    width: 140px;
+    height: 70px;
+  }
+  .portada {
+    background-image: url(../multimedia/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+  }
+  .portada__contenedor--titulo {
+    font-size: 900%;
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 5px red;
+    margin-bottom: 150px;
+  }
+  .portada__contenedor--subtitulo {
+    font-size: 400%;
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 5px red;
+  }
+  .subtitulo {
+    margin-top: 30px;
+  }
+  .subtitulo h2 {
+    color: orangered;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid white;
+  }
+  .parte1__subcontenedor {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .estilo_letra, .art1_h4 {
+    color: white;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #energeticas {
+    text-decoration: none;
+    color: white;
+  }
+  #proteicas {
+    text-decoration: none;
+    color: white;
+  }
+  #energeticas:hover {
+    color: rgb(238, 255, 0);
+  }
+  #proteicas:hover {
+    color: rgb(238, 255, 0);
+  }
+  .imgenergeticas {
+    width: 300px;
+    height: 300px;
+  }
+  .imgproteicas {
+    width: 300px;
+    height: 300px;
+  }
+  .art1 p {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
+  .contenedor3 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contenedor3 img {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+  footer {
+    width: 100%;
+    height: 200px;
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 30px;
+  }
+  footer .div1 h3 {
+    font-size: 30px;
+  }
+  footer .div2 h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+  footer .div3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  footer .div3 p {
+    font-size: 15px;
+  }
+  .parte1__subcontenedor {
+    transition: transform 2s;
+  }
+  .parte1__subcontenedor:hover {
+    transform: scale(1.1);
+  }
+  .main2 p {
+    color: white;
+    font-family: Georgia;
+    size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
